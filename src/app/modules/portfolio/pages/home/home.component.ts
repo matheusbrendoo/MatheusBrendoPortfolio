@@ -11,7 +11,7 @@ import { ProjectsComponent } from '../../components/projects/projects.component'
   standalone: true,
   imports: [HeaderComponent, KnowledgeComponent, ExperiencesComponent, ProjectsComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
 
