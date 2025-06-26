@@ -15,4 +15,5 @@ import { ProjectsComponent } from '../../components/projects/projects.component'
 })
 export class HomeComponent {
 
+
 }
