@@ -16,11 +16,12 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Build com baseHref correto
-        run: npm run build -- --base-href=/MatheusBrendoPortfolio/
+      - name: Build com baseHref
+        run: npm run build
 
       - name: Deploy para gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/angular-portfolio/browser
+          publish_branch: gh-pages
