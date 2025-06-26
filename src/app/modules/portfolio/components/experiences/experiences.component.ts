@@ -15,8 +15,19 @@ export class ExperiencesComponent {
   public arrayExperiences = signal<IExperiences[]>([
     {
       summary: {
+        strong: 'Analista de Desenvolvimento de Software Junior',
+        p: 'LUZ Soluções Financeiras | Mai 2025 - Atual'
+      },
+      text:
+      `
+      <p>Atuo como Analista de Desenvolvimento de Software na LUZ Soluções Financeiras, com foco em desenvolvimento backend com .NET e integração com bancos de dados Oracle.</p>
+      <p>Participo da criação e manutenção de interfaces desktop utilizando WPF com o padrão MVVM, além da escrita de testes unitários com NUnit para garantir a qualidade e estabilidade das aplicações.</p>
+      <p>Também atuo na correção de bugs, implementação de novas funcionalidades e apoio contínuo na evolução dos sistemas internos.</p>`
+    },
+    {
+      summary: {
         strong: 'Analista de Suporte Nível II',
-        p: 'Veolink | Set 2022 - Fev 2024'
+        p: 'Veolink | Set 2022 - Fev 2025'
       },
       text: '<p>Atuei como Analista de Suporte II na Veolink Sistemas, com foco em banco de dados SQL/Oracle, garantindo a estabilidade e eficiência dos sistemas.</p> <p>Minha experiência incluiu a execução de testes funcionais e a homologação de sistemas, identificando e documentando inconsistências para aprimorar a qualidade do software. Além disso, fui responsável pela validação de novas versões e correções antes da liberação para produção, assegurando a confiabilidade das atualizações.</p> <p>Também realizei a atualização de sistemas e servidores, incluindo o gerenciamento de aplicações no Tomcat, bem como a verificação e correção de vulnerabilidades, contribuindo para a segurança e o desempenho dos sistemas. </p>'
     },

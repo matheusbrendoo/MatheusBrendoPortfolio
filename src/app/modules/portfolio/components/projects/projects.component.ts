@@ -11,18 +11,26 @@ import { IProjetcs } from '../../interface/IProjetcs.interface';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+
+  goToLink(url: string): void {
+  const confirmed = window.confirm('A aplicação pode demorar alguns segundos para carregar, pois a API está em modo de hibernação. Clique em OK e aguarde com carinho <3');
+
+  if (confirmed) {
+    window.open(url, '_blank');
+  }
+}
   public arrayProjects = signal<IProjetcs[]>([
     {
-      src: 'assets/img/projects/em-breve.png',
-      alt: "Em breve",
-      title: "Em breve",
+      src: 'assets/img/projects/cotacaodolar.png',
+      alt: "CotaçaoDolar",
+      title: "Sistema de Cotação de Dólar",
       with: '100px',
       height: '51px',
       description: '',
       links: [
         {
-          name: 'Conheça',
-          href: 'https://github.com/matheusbrendoo',
+          name: 'CotaçaoDolar',
+          href: 'https://cotacao-dolar-shx.netlify.app/',
         },
       ],
     },
@@ -68,7 +76,7 @@ export class ProjectsComponent {
         },
       ],
     },
-    
+
   ])
 
 }

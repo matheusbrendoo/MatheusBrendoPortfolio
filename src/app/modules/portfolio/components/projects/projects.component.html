@@ -4,14 +4,14 @@
     <ul>
         @for (item of arrayProjects (); track item) {
         <li>
-            <button>
-                <img
-                [src]="item.src"
-                [alt]="item.alt"
-                [attr.width]="item.with"
-                [attr.height]="item.height"
-                loading="lazy"
-                />
+            <button (click)="goToLink(item.links[0].href)">
+              <img
+              [src]="item.src"
+              [alt]="item.alt"
+              [attr.width]="item.with"
+              [attr.height]="item.height"
+              loading="lazy"
+              />
             </button>
         </li>
     }

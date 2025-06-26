@@ -13,17 +13,26 @@ import { IKnowledge } from '../../interface/IKnowledge.interface';
 export class KnowledgeComponent {
   public arrayKnowledge = signal<IKnowledge[]>([
     {
+      src: 'assets/icons/knowledge/Csharp.png',
+      alt: 'Ícone de conhecimento em C#'
+    },
+    {
+      src: 'assets/icons/knowledge/dotnet.png',
+      alt: 'Ícone de conhecimento em .NET'
+    },
+    {
       src: 'assets/icons/knowledge/java.svg',
-      alt: 'Ícone de conhecimento de Java'
+      alt: 'Ícone de conhecimento em Java'
     },
     {
       src: 'assets/icons/knowledge/angular.svg',
-      alt: 'Ícone de conhecimento de Angular'
+      alt: 'Ícone de conhecimento en Angular'
     },
     {
       src: 'assets/icons/knowledge/banco.png',
-      alt: 'Ícone de conhecimento de Banco de Dados '
+      alt: 'Ícone de conhecimento em Banco de Dados '
     }
+
   ])
 
 }
