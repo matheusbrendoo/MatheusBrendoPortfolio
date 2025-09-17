@@ -30,7 +30,7 @@ export class ProjectsComponent {
       links: [
         {
           name: 'CotaçaoDolar',
-          href: 'https://cotacao-dolar-shx.netlify.app/',
+          href: 'https://matheusbrendoo.github.io/CotacaoDolar',
         },
       ],
     },
