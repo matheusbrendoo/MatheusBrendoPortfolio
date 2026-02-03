@@ -25,6 +25,10 @@ export class KnowledgeComponent {
       alt: 'Ícone de conhecimento em Java'
     },
     {
+      src: 'assets/icons/knowledge/vue-js.svg',
+      alt: 'Ícone de conhecimento em Vue.js'
+    },
+    {
       src: 'assets/icons/knowledge/angular.svg',
       alt: 'Ícone de conhecimento en Angular'
     },

@@ -13,16 +13,27 @@ import { IExperiences } from '../../interface/IExperiences.interface';
 export class ExperiencesComponent {
 
   public arrayExperiences = signal<IExperiences[]>([
-    {
+     {
       summary: {
-        strong: 'Analista de Desenvolvimento de Software Junior',
-        p: 'LUZ Soluções Financeiras | Mai 2025 - Atual'
+        strong: ' Desenvolvedor de Software',
+        p: 'AUTOLAB Automação e Sistemas | Nov 2025 - Atual'
       },
       text:
       `
-      <p>Atuo como Analista de Desenvolvimento de Software na LUZ Soluções Financeiras, com foco em desenvolvimento backend com .NET e integração com bancos de dados Oracle.</p>
-      <p>Participo da criação e manutenção de interfaces desktop utilizando WPF com o padrão MVVM, além da escrita de testes unitários com NUnit para garantir a qualidade e estabilidade das aplicações.</p>
-      <p>Também atuo na correção de bugs, implementação de novas funcionalidades e apoio contínuo na evolução dos sistemas internos.</p>`
+      <p>Desenvolvedor de Software, com foco no desenvolvimento end-to-end de APIs REST, desde a definição da arquitetura até a implementação do backend e a integração com o frontend.</p>
+      <p>Trabalho com .NET 8.0 no desenvolvimento de serviços modernos e escaláveis, além da modernização e manutenção de sistemas legados em .NET Framework e Windows Forms.</p>
+      <p>No frontend, desenvolvo interfaces utilizando Vue.js, garantindo comunicação eficiente entre as camadas da aplicação, com foco em desempenho, estabilidade e experiência do usuário.</p>`
+    },
+    {
+      summary: {
+        strong: ' Desenvolvedor de Software',
+        p: 'LUZ Soluções Financeiras | Mai 2025 - Nov 2025'
+      },
+      text:
+      `
+      <p>Desenvolvedor de Software na LUZ Soluções Financeiras, com foco no desenvolvimento backend em .NET e integração com bancos de dados Oracle para sistemas financeiros.</p>
+      <p>Participei da criação e evolução de aplicações desktop utilizando WPF com o padrão arquitetural MVVM, além da implementação de testes unitários com NUnit, contribuindo para a qualidade, estabilidade e manutenibilidade das soluções.</p>
+      <p>Também atuei na correção de bugs, desenvolvimento de novas funcionalidades e no suporte à evolução contínua dos sistemas internos, colaborando diretamente com as equipes de produto e tecnologia.</p>`
     },
     {
       summary: {
