@@ -21,6 +21,34 @@ export class ProjectsComponent {
 }
   public arrayProjects = signal<IProjetcs[]>([
     {
+      src: 'assets/img/projects/q3x.png',
+      alt: "Q3X Commerce",
+      title: "Q3X Commerce — E-commerce completo",
+      with: '100px',
+      height: '51px',
+      description: '',
+      links: [
+        {
+          name: 'Q3X Commerce',
+          href: 'https://q3x.com.br',
+        },
+      ],
+    },
+    {
+      src: 'assets/img/projects/freakypi.png',
+      alt: "Pi — House & Stuff",
+      title: "Site do DJ Pi",
+      with: '100px',
+      height: '51px',
+      description: '',
+      links: [
+        {
+          name: 'Freaky Pi',
+          href: 'https://freakypi.com',
+        },
+      ],
+    },
+    {
       src: 'assets/img/projects/cotacaodolar.png',
       alt: "CotaçaoDolar",
       title: "Sistema de Cotação de Dólar",
@@ -34,49 +62,6 @@ export class ProjectsComponent {
         },
       ],
     },
-    {
-      src: 'assets/img/projects/soon.png',
-      alt: "Em breve",
-      title: "Em breve",
-      with: '100px',
-      height: '51px',
-      description: '',
-      links: [
-        {
-          name: 'Conheça',
-          href: 'https://github.com/matheusbrendoo',
-        },
-      ],
-    },
-    {
-      src: 'assets/img/projects/em-breve.png',
-      alt: "Projeto Login Page Responsive",
-      title: "Login Page",
-      with: '100px',
-      height: '51px',
-      description: '',
-      links: [
-        {
-          name: 'Conheça',
-          href: 'https://github.com/matheusbrendoo',
-        },
-      ],
-    },
-    {
-      src: 'assets/img/projects/soon.png',
-      alt: "Em breve",
-      title: "Em breve",
-      with: '100px',
-      height: '51px',
-      description: '',
-      links: [
-        {
-          name: 'Conheça',
-          href: 'https://github.com/matheusbrendoo',
-        },
-      ],
-    },
-
   ])
 
 }
