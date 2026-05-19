@@ -12,21 +12,25 @@ import { IProjetcs } from '../../interface/IProjetcs.interface';
 })
 export class ProjectsComponent {
 
-  goToLink(url: string): void {
-  const confirmed = window.confirm('A aplicação pode demorar alguns segundos para carregar, pois a API está em modo de hibernação. Clique em OK e aguarde com carinho <3');
+  public activeIndex = signal<number | null>(null);
 
-  if (confirmed) {
+  toggleCard(index: number): void {
+    this.activeIndex.set(this.activeIndex() === index ? null : index);
+  }
+
+  goToLink(url: string, event: Event): void {
+    event.stopPropagation();
     window.open(url, '_blank');
   }
-}
+
   public arrayProjects = signal<IProjetcs[]>([
     {
       src: 'assets/img/projects/q3x.png',
       alt: "Q3X Commerce",
-      title: "Q3X Commerce — E-commerce completo",
+      title: "Q3X Commerce",
       with: '100px',
       height: '51px',
-      description: '',
+      description: 'E-commerce completo com catálogo de produtos, carrinho, checkout e painel administrativo.',
       links: [
         {
           name: 'Q3X Commerce',
@@ -37,10 +41,10 @@ export class ProjectsComponent {
     {
       src: 'assets/img/projects/freakypi.png',
       alt: "Pi — House & Stuff",
-      title: "Site do DJ Pi",
+      title: "Freaky Pi",
       with: '100px',
       height: '51px',
-      description: '',
+      description: 'Site oficial do DJ Pi com agenda de eventos, mixes e identidade visual exclusiva.',
       links: [
         {
           name: 'Freaky Pi',
@@ -51,10 +55,10 @@ export class ProjectsComponent {
     {
       src: 'assets/img/projects/cotacaodolar.png',
       alt: "CotaçaoDolar",
-      title: "Sistema de Cotação de Dólar",
+      title: "Cotação do Dólar",
       with: '100px',
       height: '51px',
-      description: '',
+      description: 'Consulta em tempo real da cotação do dólar, com histórico e conversão de valores.',
       links: [
         {
           name: 'CotaçaoDolar',

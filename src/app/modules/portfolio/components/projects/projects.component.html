@@ -2,18 +2,32 @@
     <h2>Projetos desenvolvidos</h2>
 
     <ul>
-        @for (item of arrayProjects (); track item) {
-        <li>
-            <button (click)="goToLink(item.links[0].href)">
-              <img
-              [src]="item.src"
-              [alt]="item.alt"
-              [attr.width]="item.with"
-              [attr.height]="item.height"
-              loading="lazy"
-              />
-            </button>
+        @for (item of arrayProjects(); track item; let i = $index) {
+        <li [class.active]="activeIndex() === i" (click)="toggleCard(i)">
+            <div class="card-inner">
+                <!-- Frente: imagem -->
+                <div class="card-front">
+                    <img
+                        [src]="item.src"
+                        [alt]="item.alt"
+                        loading="lazy"
+                    />
+                </div>
+
+                <!-- Verso: descrição -->
+                <div class="card-back">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                    <a
+                        [href]="item.links[0].href"
+                        target="_blank"
+                        (click)="goToLink(item.links[0].href, $event)"
+                    >
+                        Visitar site
+                    </a>
+                </div>
+            </div>
         </li>
-    }
+        }
     </ul>
 </div>
